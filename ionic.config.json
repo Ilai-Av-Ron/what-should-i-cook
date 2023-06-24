@@ -1,0 +1,8 @@
+{
+  "name": "WhatShouldICook?",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "de29ee2a"
+}
