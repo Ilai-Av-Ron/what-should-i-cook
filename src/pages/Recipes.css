@@ -1,0 +1,103 @@
+.recipes-page {
+  --background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  --ion-color-primary: #2ecc50;
+  margin: -2%;
+}
+
+.recipes-toolbar {
+  --background: #34495e;
+  --color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipes-title {
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipes-content {
+  --background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.empty-recipes-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.scan-redirect-button {
+  --background: #1b9c51;
+  --color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  margin: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.ion-card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ion-card-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ion-img {
+  margin-top: 10%;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 12px;
+  transition: background 0.2s ease;
+}
+
+.ion-card-content {
+  text-align: left;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.ion-card-content h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ion-card-content ul,
+.ion-card-content ol {
+  padding-left: 20px;
+}
+
+.ion-button {
+  --background: #1b9c51;
+  --color: #ffffff;
+  font-weight: bold;
+  margin: 10px auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.ion-button:hover {
+  transform: scale(1.05);
+}

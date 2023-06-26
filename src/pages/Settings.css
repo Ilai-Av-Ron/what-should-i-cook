@@ -1,0 +1,69 @@
+.settings-page {
+    --background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    --ion-color-primary: #2ecc50;
+    margin: -2%;
+  }
+
+  .settings-toolbar {
+    --background: #34495e;
+    --color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+  .settings-title {
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .settings-content {
+    --background: transparent;
+  }
+  
+  .settings-list {
+    --background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+  }
+  
+  .settings-list-header {
+    font-weight: 700;
+    font-size: 1.4em;
+    --color: #34495e;
+    background: #ecf0f1;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  ion-title {
+    text-align: center;
+  }
+  
+  .settings-item {
+    --border-color: #bdc3c7;
+    --border-width: 0 0 1px 0;
+    --border-style: solid;
+    transition: background 0.2s ease;
+  }
+  
+  .settings-item:hover {
+  }
+  
+  .settings-label {
+    font-weight: 500;
+    font-size: 1.1em;
+    --color: #2c3e50;
+  }
+  
+  .settings-checkbox {
+    --color-checked: #2ecc71; /* Updated to green */
+    --color: #34495e;
+  }
+
+  

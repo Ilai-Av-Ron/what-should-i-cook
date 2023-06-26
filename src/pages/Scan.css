@@ -1,0 +1,46 @@
+.scan-page {
+    --background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    --ion-color-primary: #15a735;
+}
+
+.scan-toolbar {
+    --background: #34495e;
+    --color: #fff;
+}
+
+.scan-title {
+    font-weight: 700;
+}
+
+.scan-content {
+    --background: transparent;
+}
+
+.scan-button {
+    border-radius: 8px;
+    background: #34495e;
+    color: #fff;
+    margin: 16px;
+    padding: 16px;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    height: 80px; /* adjust this as needed */
+    --background: #18904a;
+    --color: #ffffff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.scan-image {
+    border-radius: 16px;
+    border: 1px solid #bdc3c7;
+    background: rgba(255, 255, 255, 0.8);
+    transition: background 0.2s ease;
+}
+
+.scan-alert {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
