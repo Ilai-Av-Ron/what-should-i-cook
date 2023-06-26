@@ -1,0 +1,30 @@
+[33mcommit 3c38317121a52d6acc5e60ea778ed84bd960251c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 4d31743 65748a0
+Author: Ilai Av-Ron <ilai.avron@post.runi.ac.il>
+Date:   Mon Jun 26 23:44:18 2023 +0300
+
+    Merge branch 'main' of https://github.com/Ilai-Av-Ron/what-should-i-cook
+
+[33mcommit 65748a0aab588841577e8932fb1a6f6b900bc4ce[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ilai Av-Ron <68614457+Ilai-Av-Ron@users.noreply.github.com>
+Date:   Mon Jun 26 23:43:45 2023 +0300
+
+    Delete README.md
+
+[33mcommit 4d317436ff74c088f0a79aea9fbde1811256b5cf[m
+Author: Ilai Av-Ron <ilai.avron@post.runi.ac.il>
+Date:   Mon Jun 26 23:42:21 2023 +0300
+
+    Presentation Version
+
+[33mcommit 8d03beeda8e1353e8d3963cb934630972f772129[m
+Author: Ilai Av-Ron <68614457+Ilai-Av-Ron@users.noreply.github.com>
+Date:   Mon Jun 26 23:38:43 2023 +0300
+
+    Create README.md
+
+[33mcommit 07db2c7f12391d8d0c699f52a9d6c2580b811f13[m
+Author: Ilai Av-Ron <ilaiavron@gmail.com>
+Date:   Sat Jun 24 15:03:42 2023 +0000
+
+    Initial commit

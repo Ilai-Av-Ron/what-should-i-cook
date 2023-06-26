@@ -59,7 +59,7 @@ const Scan: React.FC = () => {
       const imageUrl = image.webPath;
       setPhoto(imageUrl);
 
-      await loadPreferences(); // fetch the latest preferences before sending them to server
+      await loadPreferences(); 
 
       if (imageUrl) {
         const formData = new FormData();

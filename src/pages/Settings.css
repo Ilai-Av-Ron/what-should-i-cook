@@ -62,7 +62,7 @@
   }
   
   .settings-checkbox {
-    --color-checked: #2ecc71; /* Updated to green */
+    --color-checked: #2ecc71; 
     --color: #34495e;
   }
 
