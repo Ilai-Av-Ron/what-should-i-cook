@@ -44,7 +44,7 @@ const Recipes: React.FC = () => {
         {!recipes || recipes.length === 0 ? (
           <div className="empty-recipes-message">
             <p>No recipes found</p>
-            <IonButton href="/Scan" className="scan-redirect-button">Go to Scan</IonButton>
+            <IonButton href="/Scan" className="scan-redirect-button">Take a picture of your fridge!</IonButton>
           </div>
         ) : (
           <>

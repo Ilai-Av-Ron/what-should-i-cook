@@ -24,6 +24,7 @@ const Scan: React.FC = () => {
   useEffect(() => {
     loadPreferences();
   }, []);
+  
 
   const loadPreferences = async () => {
     const storedDietPrefs = await localforage.getItem('dietary_preferences');
@@ -69,7 +70,7 @@ const Scan: React.FC = () => {
         formData.append('options', JSON.stringify(selectedOptions));
 
         const serverResponse = await axios.post(
-          'http://127.0.0.1:5000/upload-image',
+          'http://13.48.27.134:5000/upload-image',
           formData,
           {
             headers: {
@@ -104,8 +105,8 @@ const Scan: React.FC = () => {
         console.error('Failed to capture photo');
       }
     } catch (error) {
-      console.error('Image processing failed:', error);
-      setServerResponse('Image processing failed.');
+      console.error('Something went wrong, please close the app and try again!', error);
+      setServerResponse('Something went wrong, please close the app and try again.');
     } finally {
       setIsLoading(false);
     }
