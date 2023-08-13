@@ -1,6 +1,6 @@
 # What Should I Cook?
 
-![Project Logo](log.jpg) 
+![Project Logo](log.png) 
 
 An intuitive cooking suggestion application that combines the power of AI with culinary delights. By simply uploading an image of your available ingredients, get back a list of appetizing recipes you can whip up instantly!
 
