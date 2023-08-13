@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672444611277",
+    "project_id": "what-should-i-cook---android-a",
+    "storage_bucket": "what-should-i-cook---android-a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672444611277:android:89b073da2f2e665f1e0784",
+        "android_client_info": {
+          "package_name": "com.ilai.whatshouldicook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672444611277-1mashbgfcrh949is7842qsc8v9718frb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6sRv0VsKdRot6hzPcCJiwaZrTKuwG-kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672444611277-1mashbgfcrh949is7842qsc8v9718frb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
