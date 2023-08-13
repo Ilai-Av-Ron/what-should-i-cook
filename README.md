@@ -31,7 +31,7 @@ An AI-powered application that suggests recipes based on ingredients identified 
 
 ## Mobile App
 
-[Download the .apk: What Should I Cook? APK](app-debug.apk)
+[Download the .apk: What Should I Cook? APK](WhatShouldICook.apk)
 
 ## Getting Started
 
