@@ -22,13 +22,13 @@ A cooking suggestion app that uses the power of AI. By  uploading an image of yo
 Prerequisites:
 Ensure you have Node.js and Ionic installed on your system.
 Installation:
-Clone the repository:
+1. Clone the repository:
 git clone https://github.com/Ilai-Av-Ron/what-should-i-cook.git
-Navigate to the project directory:
+2. Navigate to the project directory:
 cd what-should-i-cook
-Start the Ionic app:
+3. Start the Ionic app:
 ionic serve
-Visit the application: Open your browser and head to http://localhost:8100 (or the port mentioned in your terminal when ionic serve is executed).
+4. Visit the application: Open your browser and head to http://localhost:8100 (or the port mentioned in your terminal when ionic serve is executed).
 
 Contributing:
 Pull requests are welcome. 
