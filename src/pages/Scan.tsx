@@ -56,19 +56,19 @@ const Scan: React.FC = () => {
         allowEditing: false,
         resultType: CameraResultType.Uri
       });
-
+  
       const imageUrl = image.webPath;
       setPhoto(imageUrl);
-
-      await loadPreferences(); 
-
+  
+      await loadPreferences();
+  
       if (imageUrl) {
         const formData = new FormData();
         const response = await fetch(imageUrl);
         const blob = await response.blob();
         formData.append('file', blob, 'photo.jpg');
         formData.append('options', JSON.stringify(selectedOptions));
-
+  
         const serverResponse = await axios.post(
           'http://13.48.27.134:5000/upload-image',
           formData,
@@ -78,14 +78,19 @@ const Scan: React.FC = () => {
             },
           }
         );
-
+  
         if (serverResponse.data.success) {
           const recipes = serverResponse.data.recipes;
-
+  
+          if (!recipes || recipes.length === 0) {
+            setServerResponse('No recipes found.');
+            return;
+          }
+  
           const recipeContexts = recipes.map((recipe: any) => {
             const steps = recipe.analyzedInstructions[0].steps.map((step: any) => step.step);
             const ingredients = recipe.extendedIngredients.map((ingredient: any) => ingredient.original);
-
+  
             return {
               title: recipe.title,
               image: recipe.image,
@@ -93,7 +98,7 @@ const Scan: React.FC = () => {
               ingredients: ingredients,
             };
           });
-
+  
           setRecipes(recipeContexts);
           setAlertMessage('Recipes updated successfully.');
           setShowAlert(true);
@@ -101,12 +106,14 @@ const Scan: React.FC = () => {
         } else {
           setServerResponse('Failed to process image.');
         }
-      } else {
-        console.error('Failed to capture photo');
       }
     } catch (error) {
-      console.error('Something went wrong, please close the app and try again!', error);
-      setServerResponse('Something went wrong, please close the app and try again.');
+      if ((error as any).message === "User cancelled photos app") {
+        // Camera was canceled by the user. No action required.
+      } else {
+        console.error('Something went wrong:', error);
+        setServerResponse('Something went wrong, please close the app and try again.');
+      }
     } finally {
       setIsLoading(false);
     }

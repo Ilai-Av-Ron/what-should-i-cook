@@ -12,6 +12,7 @@ import {
   IonCardTitle,
   IonCardContent,
 } from '@ionic/react';
+import { Share } from '@capacitor/share';
 import { RecipesContext } from '../RecipesContext';
 import './Recipes.css';
 
@@ -30,6 +31,34 @@ const Recipes: React.FC = () => {
   const handlePrevious = () => {
     if (currentRecipeIndex > 0) {
       setCurrentRecipeIndex(currentRecipeIndex - 1);
+    }
+  };
+
+  const shareRecipe = async () => {
+    if (!currentRecipe) return;
+
+    const ingredients = currentRecipe.ingredients?.join('\n') ?? '';
+    const steps = currentRecipe.steps?.join('\n') ?? '';
+
+    const recipeText = `
+    ${currentRecipe.title}
+
+    Ingredients:
+    ${ingredients}
+
+    Cooking Steps:
+    ${steps}
+    `;
+
+    try {
+      await Share.share({
+        title: 'Recipe',
+        text: recipeText,
+        url: currentRecipe.image,
+        dialogTitle: 'Share this recipe',
+      });
+    } catch (error) {
+      console.error('Error sharing the recipe:', error);
     }
   };
 
@@ -68,14 +97,14 @@ const Recipes: React.FC = () => {
                 </ol>
               </IonCardContent>
             </IonCard>
+            <IonButton className="ion-button" onClick={handleNext} disabled={currentRecipeIndex === (recipes?.length ?? 0) - 1}>
+              Next Recipe
+            </IonButton>
             <IonButton className="ion-button" onClick={handlePrevious} disabled={currentRecipeIndex === 0}>
               Previous Recipe
             </IonButton>
-            <IonButton className="ion-button"
-              onClick={handleNext}
-              disabled={currentRecipeIndex === (recipes?.length ?? 0) - 1}
-            >
-              Next Recipe
+            <IonButton className="ion-button share-button" onClick={shareRecipe}>
+              Share Recipe
             </IonButton>
           </>
         )}

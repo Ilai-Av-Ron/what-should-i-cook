@@ -21,6 +21,30 @@ interface PrefsType {
   [key: string]: boolean;
 }
 
+const dietaryPrefsMapping = {
+  glutenFree: 'Gluten Free',
+  ketogenic: 'Ketogenic',
+  vegetarian: 'Vegetarian',
+  vegan: 'Vegan',
+  pescetarian: 'Pescetarian',
+  paleo: 'Paleo'
+};
+
+const intolerancesMapping = {
+  dairy: 'Dairy',
+  egg: 'Egg',
+  gluten: 'Gluten',
+  grain: 'Grain',
+  peanut: 'Peanut',
+  seafood: 'Seafood',
+  sesame: 'Sesame',
+  shellfish: 'Shellfish',
+  soy: 'Soy',
+  sulfite: 'Sulfite',
+  treeNut: 'Tree Nut',
+  wheat: 'Wheat'
+};
+
 const Settings: React.FC = () => {
   const [dietaryPrefs, setDietaryPrefs] = useState<PrefsType>({
     glutenFree: false,
