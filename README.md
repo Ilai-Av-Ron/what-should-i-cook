@@ -37,5 +37,5 @@ License:
 MIT
 
 Acknowledgements:
-Spoonacular API for providing extensive recipe details.
-My mentor for this project, David Kalmanson.
+- My mentor for this project, David Kalmanson.
+- Spoonacular API for providing extensive recipe details.
