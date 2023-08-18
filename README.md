@@ -5,6 +5,10 @@
 
 An AI-powered application that suggests recipes based on ingredients identified in an uploaded image.
 
+### Demo
+
+https://github.com/Ilai-Av-Ron/what-should-i-cook/assets/68614457/78ad9a18-4cb3-46ff-8a3c-ef76230e0402
+
 ## Features
 
 1. **Ingredient Detection**: AI-driven detection of ingredients from images, powered by Roboflow in conjunction with YOLO.
