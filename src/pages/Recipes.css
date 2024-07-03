@@ -103,14 +103,14 @@
 }
 
 .share-button {
-  --background: #f39c12; /* A pleasant orange shade */
-  --color: #ffffff; /* White text */
-  font-weight: bold; /* Bold text to make it pop */
-  margin: 15px auto; /* Slight increase in margin for distinction */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border: 1px solid #e67e22; /* Border to give it some definition */
+  --background: #f39c12;
+  --color: #ffffff;
+  font-weight: bold;
+  margin: 15px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e67e22;
 }
 
 .share-button:hover {
-  --background: #e67e22; /* A slightly darker orange on hover */
+  --background: #e67e22;
 }
